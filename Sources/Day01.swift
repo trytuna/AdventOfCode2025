@@ -130,7 +130,7 @@ struct Day01: AdventDay {
   func part1() async throws -> Int {
     let safe = Safe()
 
-    for var entry in entities {
+    for entry in entities {
       guard let rotation = Rotation.init(rawValue: entry) else {
         throw Rotation.RotationError.unknown("\(entry) not parsable")
       }
@@ -145,7 +145,7 @@ struct Day01: AdventDay {
   func part2() async throws -> Int {
     let safe = Safe()
 
-    for var entry in entities {
+    for entry in entities {
       guard let rotation = Rotation.init(rawValue: entry) else {
         throw Rotation.RotationError.unknown("\(entry) not parsable")
       }
